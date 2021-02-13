@@ -1,0 +1,19 @@
+[package]
+authors = ["prfss <gprfss4815@gmail.com>"]
+description = "A time and space efficient suffix sorting algorithm"
+edition = "2018"
+name = "sacak"
+version = "0.1.0"
+
+[dependencies]
+contracts = "^0.6.0"
+num = "^0.3.1"
+
+[dev-dependencies]
+criterion = "^0.3"
+proptest = "^0.10.1"
+rand = {version = "^0.8.3", features = ["small_rng"]}
+
+[[bench]]
+harness = false
+name = "bench_sacak"
